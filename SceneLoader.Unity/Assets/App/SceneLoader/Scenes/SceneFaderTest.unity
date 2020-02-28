@@ -963,5 +963,15 @@ PrefabInstance:
       propertyPath: targetCamera
       value: 
       objectReference: {fileID: 1861694107}
+    - target: {fileID: 3113522574561597118, guid: ce0616498473d9949adfd024bd22f7eb,
+        type: 3}
+      propertyPath: fadeInDuration
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3113522574561597118, guid: ce0616498473d9949adfd024bd22f7eb,
+        type: 3}
+      propertyPath: fadeOutDuration
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ce0616498473d9949adfd024bd22f7eb, type: 3}
