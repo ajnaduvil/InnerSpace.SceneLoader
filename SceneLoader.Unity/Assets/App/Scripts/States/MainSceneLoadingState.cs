@@ -5,12 +5,12 @@ using UnityEngine;
 
 namespace Innerspace.TestApp.States
 {
-    public class LoadedState : MonoBehaviourState
+    public class MainSceneLoadingState : MonoBehaviourState
     {
         public static MonoBehaviourState Instance;
         private void Awake()
         {
-            if (Instance != null)
+            if (Instance == null)
             {
                 Instance = this;
             }
@@ -19,5 +19,18 @@ namespace Innerspace.TestApp.States
                 Destroy(this);
             }
         }
+
+        public SceneLoadingHandler sceneLodingHandler;
+        public override void OnEnter()
+        {
+            base.OnEnter();
+            StartCoroutine(sceneLodingHandler.StartLoadingScene());
+        }
+
+        public override void OnExit()
+        {
+            base.OnExit();
+        }
+
     }
 }

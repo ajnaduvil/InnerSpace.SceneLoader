@@ -59,7 +59,7 @@ namespace Innerspace.TestApp
             tooltipDisplayHandler.StopShowingTooltips();
             hudHandler.DisableHUD();
             SceneFader.Instance.FadeOut();
-            StateController.Instance.SwitchState(MainSceneLoaded.Instance);
+            StateController.Instance.SwitchState(MainSceneLoadedState.Instance);
         }
 
         /// <summary>

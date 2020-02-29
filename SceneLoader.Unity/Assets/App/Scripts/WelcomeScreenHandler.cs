@@ -11,7 +11,7 @@ namespace Innerspace.TestApp
 
         public void OnLoadClick()
         {
-            StateController.Instance.SwitchState(MainSceneLoading.Instance);
+            StateController.Instance.SwitchState(MainSceneLoadingState.Instance);
         }
     }
 }

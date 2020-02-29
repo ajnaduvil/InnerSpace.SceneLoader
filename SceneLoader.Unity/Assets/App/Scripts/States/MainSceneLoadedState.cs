@@ -5,7 +5,7 @@ using UnityEngine;
 
 namespace Innerspace.TestApp.States
 {
-    public class MainSceneLoaded : MonoBehaviourState
+    public class MainSceneLoadedState : MonoBehaviourState
     {
         public static MonoBehaviourState Instance;
         private void Awake()
