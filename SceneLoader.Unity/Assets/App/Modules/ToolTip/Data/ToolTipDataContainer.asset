@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd7c7859b5a65a948a40a716cd99e7a3, type: 3}
+  m_Name: ToolTipDataContainer
+  m_EditorClassIdentifier: 
+  toolTips:
+  - header: Did you know?
+    info: Likely the most popular VR for Training use case is new employee onboarding
+  - header: Did you know?
+    info: "The VR Lab at Texas State University helped create a training application
+      for the State of Texas\u2019s Ambulance Bus drivers and EMTs. "
+  - header: Did you know?
+    info: 'other great use case for VR for Training is simulating rare or unexpected
+      events. '
+  - header: Did you know?
+    info: Employee onboarding through VR is a great first touch point for many workers.
+  - header: Did you know?
+    info: A large division of the Federal Government utilized InstaVR to dramatically
+      cut costs in training new employees at field offices

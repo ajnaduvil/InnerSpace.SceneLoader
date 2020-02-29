@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Innerspace.TestApp.ToolTip;
+using System;
 using UnityEngine;
 
 namespace Innerspace.TestApp.UI
@@ -10,11 +11,12 @@ namespace Innerspace.TestApp.UI
     {
         public Progressbar progressbar;
         public LoadingCursorHUD loadingCursor;
-
+        public ToolTipDisplay tooltipDisplay;
         internal void DisableHUD()
         {
             progressbar.gameObject.SetActive(false);
             loadingCursor.gameObject.SetActive(false);
+            tooltipDisplay.DisableDisplay();
 
         }
 
@@ -22,6 +24,6 @@ namespace Innerspace.TestApp.UI
         {
             progressbar.gameObject.SetActive(true);
             loadingCursor.gameObject.SetActive(true);
-        }
+            tooltipDisplay.EnableDisplay();        }
     }
 }

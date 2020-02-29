@@ -1,6 +1,7 @@
 ﻿using AVR.Utils.StateMachines;
 using Innerspace.TestApp.SceneLoader;
 using Innerspace.TestApp.States;
+using Innerspace.TestApp.ToolTip;
 using Innerspace.TestApp.UI;
 using System;
 using System.Collections;
@@ -28,6 +29,7 @@ namespace Innerspace.TestApp
 
         [Header("References")]
         public HUDHandler hudHandler;
+        public ToolTipDisplayHandler tooltipDisplayHandler;
 
         /// <summary>
         /// Starts loading the scene specified in <see cref="sceneIndex"/>
@@ -49,10 +51,12 @@ namespace Innerspace.TestApp
             sceneLoadingOperation.allowSceneActivation = false;
             var timer = StartCoroutine(UpdateProgressbar(minimumDelay));
             hudHandler.EnableHUD();
-            yield return timer;
+            tooltipDisplayHandler.StartShowingTooltips();
+             yield return timer;
             sceneLoadingOperation.allowSceneActivation = true;
             yield return sceneLoadingOperation;
 
+            tooltipDisplayHandler.StopShowingTooltips();
             hudHandler.DisableHUD();
             SceneFader.Instance.FadeOut();
             StateController.Instance.SwitchState(MainSceneLoaded.Instance);
