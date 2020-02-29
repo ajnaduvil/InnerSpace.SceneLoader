@@ -24,8 +24,14 @@ namespace Innerspace.TestApp.SceneLoader
         #endregion
 
         private bool isSetup = false;
+
+
+        #region Fader Methods
+        /// <summary>
+        /// Initializes fader
+        /// </summary>
         public void Setup()
-        {           
+        {
             Assert.IsNotNull(targetCamera);
             Assert.IsNotNull(faderAC);
             //Reset the render plane position to zero
@@ -36,7 +42,6 @@ namespace Innerspace.TestApp.SceneLoader
             faderRenderer.material.color = fadeToColor;
             isSetup = true;
         }
-        #region Fader Methods
         /// <summary>
         /// Starts fading in
         /// </summary>
@@ -53,7 +58,7 @@ namespace Innerspace.TestApp.SceneLoader
         /// </summary>
         public void FadeOut()
         {
-            Assert.IsTrue(isSetup);
+            //Assert.IsTrue(isSetup);
             StartCoroutine(FadeOutCoroutine(() =>
             {
                 Debug.Log("FadeOut Complete");
@@ -78,6 +83,13 @@ namespace Innerspace.TestApp.SceneLoader
             faderAC.SetBool("isFadeIn", false);
             yield return new WaitForSeconds(fadeOutDuration);
             fadeOutComplete?.Invoke();
+        }
+        #endregion
+
+        #region Monobehaviour Methods
+        private void Start()
+        {
+            Setup();
         }
         #endregion
     }
