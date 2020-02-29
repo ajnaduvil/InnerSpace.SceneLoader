@@ -25,7 +25,7 @@ namespace Innerspace.TestApp.SceneLoader
         public void StartLoadingScene(string sceneName,LoadSceneMode sceneMode)
         {
            
-            var sceneloadOperation = SceneManager.LoadSceneAsync(sceneName,sceneMode,);
+            var sceneloadOperation = SceneManager.LoadSceneAsync(sceneName,sceneMode);
             sceneloadOperation.completed += (loadOperation) =>
             {
 
