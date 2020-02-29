@@ -13,15 +13,15 @@ namespace Innerspace.TestApp.UI
 
         internal void DisableHUD()
         {
-            progressbar.gameObject.SetActive(true);
-            loadingCursor.gameObject.SetActive(true);
+            progressbar.gameObject.SetActive(false);
+            loadingCursor.gameObject.SetActive(false);
 
         }
 
         internal void EnableHUD()
         {
-            progressbar.gameObject.SetActive(false);
-            loadingCursor.gameObject.SetActive(false);
+            progressbar.gameObject.SetActive(true);
+            loadingCursor.gameObject.SetActive(true);
         }
     }
 }

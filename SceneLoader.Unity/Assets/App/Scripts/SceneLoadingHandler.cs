@@ -42,6 +42,7 @@ namespace Innerspace.TestApp
             ///Show progresbar
             ///show hud
             ///Switch State to loaded
+            yield return new WaitUntil(() => CameraCache.Instance.Main != null);
             SceneFader.Instance.FadeIn();
             var sceneLoadingOperation = SceneManager.LoadSceneAsync(sceneIndex, LoadSceneMode.Additive);
             sceneLoadingOperation.allowSceneActivation = false;
@@ -49,7 +50,7 @@ namespace Innerspace.TestApp
             hudHandler.EnableHUD();
             yield return timer;
             sceneLoadingOperation.allowSceneActivation = true;
-            yield return sceneLoadingOperation;           
+            yield return sceneLoadingOperation;
 
             hudHandler.DisableHUD();
             SceneFader.Instance.FadeOut();
@@ -71,5 +72,7 @@ namespace Innerspace.TestApp
                 yield return null;
             }
         }
+
+
     }
 }
