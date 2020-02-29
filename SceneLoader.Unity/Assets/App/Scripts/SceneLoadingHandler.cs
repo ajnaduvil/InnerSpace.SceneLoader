@@ -42,6 +42,7 @@ namespace Innerspace.TestApp
             ///Show progresbar
             ///show hud
             ///Switch State to loaded
+            Debug.Log("Starting to load scene at index " + sceneIndex);
             yield return new WaitUntil(() => CameraCache.Instance.Main != null);
             SceneFader.Instance.FadeIn();
             var sceneLoadingOperation = SceneManager.LoadSceneAsync(sceneIndex, LoadSceneMode.Additive);
@@ -73,6 +74,11 @@ namespace Innerspace.TestApp
             }
         }
 
+
+        private void Start()
+        {
+            hudHandler.DisableHUD();
+        }
 
     }
 }

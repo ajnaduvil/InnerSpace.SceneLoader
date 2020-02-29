@@ -7,16 +7,16 @@ namespace Innerspace.TestApp.States
 {
     public class AppLoadedState : MonoBehaviourState
     {
-        public SceneLoadingHandler sceneLodingHandler;
-        public override void OnEnter()
+        public static MonoBehaviourState Instance;
+        private void Awake()
         {
-            base.OnEnter();
-            StartCoroutine(sceneLodingHandler.StartLoadingScene());
-        }
-
-        public override void OnExit()
-        {
-            base.OnExit();
+            if(Instance == null)
+            {
+                Instance = this;
+            }else
+            {
+                Destroy(this);
+            }
         }
     }
 }
