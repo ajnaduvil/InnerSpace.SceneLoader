@@ -2,7 +2,6 @@
 # Implementaiton Details
 
 ### Scene Hierarchy
-Here is the Init scene hierarchy
 ![alt text](https://github.com/ajnaduvil/InnerSpace.SceneLoader/blob/master/Documentation/Implementation%20Details/project%20hierarchy.PNG?raw=true)
 
 ### Project file structure
