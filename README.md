@@ -32,7 +32,7 @@ Here is a video of the project in action.
 -   A `ToolTipConfig.json` with the default configuration data will be created at `Scene Loader v1.0.0\Innerspace Scene Loader_Data` after running the application for the first time.
 -   You can edit the `ToolTipConfig.json` data or replace with new file
 -   A sample tooltip configuration is provided with the build to demonstrate changing the tool tip data dynamaically
-** Tool Configuration file format **
+**Sample tool tip Configuration file format **
 ```json
 {
 "toolTips":[
