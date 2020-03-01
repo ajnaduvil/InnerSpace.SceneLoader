@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd7c7859b5a65a948a40a716cd99e7a3, type: 3}
+  m_Name: ToolTipDataContainer
+  m_EditorClassIdentifier: 
+  toolTips:
+  - header: Did you know?
+    info: The use of VR in education will dramatically increase over the next few
+      years. While it is unlikely to replace traditional face-to-face teaching methods
+      anytime soon.
+  - header: Did you know?
+    info: "The University of Barcelona uses VR as a tool in psychology and neuroscience.
+      UCLA is training neurosurgeons using their \u201CSurgical Theatre\u201D"
+  - header: Virtual Fields Trips
+    info: The most common and obvious use of VR is providing the ability of virtual
+      visits to distant or physically inaccessible places
+  - header: Distant Learning
+    info: With VR, online learning becomes more convenient and can even provide the
+      sense of presence.
+  - header: Recruiting
+    info: "Visiting a university via the virtual tour is a great chance to become
+      familiar with the learning process and campus life while choosing the future
+      \u201Calma mater\u201D."

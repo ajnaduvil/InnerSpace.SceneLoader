@@ -8,7 +8,7 @@ namespace Innerspace.TestApp.ToolTip
     /// <summary>
     /// Tooltip container scriptable object. Also can serialise/deserialise from a path using <see cref="LoadOrCreateConfig(string)"/>
     /// </summary>
-    [CreateAssetMenu(fileName = "ToolTipContainer", menuName = "Innerspace/TooltipData", order = 1)]
+    [CreateAssetMenu(fileName = "ToolTipDataContainer", menuName = "Innerspace/TooltipData", order = 1)]
     public class ToolTipDataContainer : ScriptableObject
     {
         public ToolTipData[] toolTips;
