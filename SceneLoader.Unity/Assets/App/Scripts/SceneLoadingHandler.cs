@@ -3,9 +3,7 @@ using Innerspace.TestApp.SceneLoader;
 using Innerspace.TestApp.States;
 using Innerspace.TestApp.ToolTip;
 using Innerspace.TestApp.UI;
-using System;
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -17,7 +15,6 @@ namespace Innerspace.TestApp
     /// </summary>
     public class SceneLoadingHandler : MonoBehaviour
     {
-
         // Scene index to be additively loaded
         public int sceneIndex;
         /// <summary>
@@ -25,7 +22,6 @@ namespace Innerspace.TestApp
         /// </summary>
         public float minimumDelay = 15f;
         // Start is called before the first frame update
-
 
         [Header("References")]
         public HUDHandler hudHandler;
@@ -36,14 +32,7 @@ namespace Innerspace.TestApp
         /// </summary>
         /// <returns></returns>
         public IEnumerator StartLoadingScene()
-        {
-            ///Fade screen
-            ///Load scene
-            ///Update progress while loading
-            ///Start showing loading hud
-            ///Show progresbar
-            ///show hud
-            ///Switch State to loaded
+        {           
             Debug.Log("Starting to load scene at index " + sceneIndex);
             yield return new WaitUntil(() => CameraCache.Instance.Main != null);
             SceneFader.Instance.FadeIn();
@@ -52,16 +41,14 @@ namespace Innerspace.TestApp
             var timer = StartCoroutine(UpdateProgressbar(minimumDelay));
             hudHandler.EnableHUD();
             tooltipDisplayHandler.StartShowingTooltips();
-             yield return timer;
+            yield return timer;
             sceneLoadingOperation.allowSceneActivation = true;
             yield return sceneLoadingOperation;
-
             tooltipDisplayHandler.StopShowingTooltips();
             hudHandler.DisableHUD();
             SceneFader.Instance.FadeOut();
             StateController.Instance.SwitchState(MainSceneLoadedState.Instance);
         }
-
         /// <summary>
         /// Updates the progressbar with  <paramref name="timeDuration"/>"/>
         /// </summary>
@@ -77,12 +64,9 @@ namespace Innerspace.TestApp
                 yield return null;
             }
         }
-
-
         private void Start()
         {
             hudHandler.DisableHUD();
         }
-
     }
 }

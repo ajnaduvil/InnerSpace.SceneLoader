@@ -9,8 +9,7 @@ public class ProgressBarTest : MonoBehaviour
     void Start()
     {
         StartCoroutine(ProgressBarChangeTest());
-    }
-  
+    }  
     IEnumerator ProgressBarChangeTest()
     {
         while (true)

@@ -1,7 +1,6 @@
 ﻿using AVR.Utils;
 using System;
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Assertions;
 
@@ -24,8 +23,7 @@ namespace Innerspace.TestApp.SceneLoader
         #endregion
 
         private bool isSetup = false;
-
-
+        
         #region Fader Methods
         /// <summary>
         /// Initializes fader
@@ -75,7 +73,6 @@ namespace Innerspace.TestApp.SceneLoader
             yield return new WaitForSeconds(fadeInDuration);
             fadeInComplete?.Invoke();
         }
-
         private IEnumerator FadeOutCoroutine(Action fadeOutComplete)
         {
             yield return new WaitUntil(() => isSetup);

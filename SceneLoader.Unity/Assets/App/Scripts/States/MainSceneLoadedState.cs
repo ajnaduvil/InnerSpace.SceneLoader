@@ -1,12 +1,10 @@
 ﻿using AVR.Utils.StateMachines;
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
 
 namespace Innerspace.TestApp.States
 {
     public class MainSceneLoadedState : MonoBehaviourState
     {
+        #region Singleton
         public static MonoBehaviourState Instance;
         private void Awake()
         {
@@ -19,5 +17,6 @@ namespace Innerspace.TestApp.States
                 Destroy(this);
             }
         }
+        #endregion
     }
 }

@@ -6,13 +6,11 @@ using UnityEngine.UI;
 
 namespace Innerspace.TestApp.UI
 {
-
     /// <summary>
     /// Progressbar image that indicates the progress update
     /// </summary>
     public class Progressbar : MonoBehaviour
     {
-
         [Range(0, 1)]
         [SerializeField]
         private float progress;
@@ -21,8 +19,7 @@ namespace Innerspace.TestApp.UI
         /// Event that gets invoked when a progressbar value changes
         /// </summary>
         public Action<float> progressChanged;
-
-
+        
         /// <summary>
         /// The current progress value between 0 and 1. Also, updates the UI when set;
         /// </summary>
@@ -39,8 +36,6 @@ namespace Innerspace.TestApp.UI
                 progressChanged?.Invoke(progress);
             }
         }
-
-
         private void OnValidate()
         {
             progressChanged?.Invoke(progress);

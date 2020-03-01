@@ -1,10 +1,7 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 namespace Innerspace.TestApp
-{    
-
+{
     /// <summary>
     /// Smoothly follow the target object always maintaining a <see cref="distance"/>
     /// </summary>
@@ -43,7 +40,6 @@ namespace Innerspace.TestApp
             transform.position = targetToFollow.transform.position + targetToFollow.transform.forward * distance;
             isSetup = true;
         }
-
 
         // Update is called once per frame
         void LateUpdate()

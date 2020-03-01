@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using TMPro;
+﻿using TMPro;
 using UnityEngine;
 
 namespace Innerspace.TestApp.UI
@@ -11,7 +9,6 @@ namespace Innerspace.TestApp.UI
     /// </summary>
     public class LoadingCursorHUD : MonoBehaviour
     {
-
         [Header("References")]
         /// <summary>
         /// Renderer reference for cursorbackground
@@ -28,15 +25,11 @@ namespace Innerspace.TestApp.UI
         public Color foreGroundColor = Color.white;
         public string loadingText = "Loading..";
 
-
-
         //Makes sure in-Editor changes are applied
         private void OnValidate()
         {
             Init();
         }
-
-
         private void Init()
         {
 #if UNITY_EDITOR

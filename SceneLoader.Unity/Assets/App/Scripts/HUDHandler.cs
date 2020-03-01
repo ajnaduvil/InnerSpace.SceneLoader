@@ -1,5 +1,4 @@
 ﻿using Innerspace.TestApp.ToolTip;
-using System;
 using UnityEngine;
 
 namespace Innerspace.TestApp.UI
@@ -7,7 +6,7 @@ namespace Innerspace.TestApp.UI
     /// <summary>
     /// Handles the HUD
     /// </summary>
-    public class HUDHandler:MonoBehaviour
+    public class HUDHandler : MonoBehaviour
     {
         public Progressbar progressbar;
         public LoadingCursorHUD loadingCursor;
@@ -17,13 +16,12 @@ namespace Innerspace.TestApp.UI
             progressbar.gameObject.SetActive(false);
             loadingCursor.gameObject.SetActive(false);
             tooltipDisplay.DisableDisplay();
-
         }
-
         internal void EnableHUD()
         {
             progressbar.gameObject.SetActive(true);
             loadingCursor.gameObject.SetActive(true);
-            tooltipDisplay.EnableDisplay();        }
+            tooltipDisplay.EnableDisplay();
+        }
     }
 }

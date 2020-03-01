@@ -20,7 +20,7 @@ namespace Innerspace.TestApp.ToolTip
         public float randomTooltipDelay = 5f;
 
         private string toolTipConfigPath;
-        private Coroutine showTooltipsCoroutineRef=null;
+        private Coroutine showTooltipsCoroutineRef = null;
 
         private void Start()
         {
@@ -30,20 +30,18 @@ namespace Innerspace.TestApp.ToolTip
             toolTipData.LoadOrCreateConfig(toolTipConfigPath);
 #endif
         }
-
         /// <summary>
         /// Starts showing random tooltips at an interval 
         /// </summary>
         public void StartShowingTooltips()
         {
-            if (showTooltipsCoroutineRef!= null)
+            if (showTooltipsCoroutineRef != null)
             {
                 StopShowingTooltips();
             }
             showTooltipsCoroutineRef = StartCoroutine(ShowTooltipsCoroutine());
 
         }
-
         /// <summary>
         /// Stops showing tooltips
         /// </summary>
@@ -56,7 +54,6 @@ namespace Innerspace.TestApp.ToolTip
             }
             toolTipDisplay.gameObject.SetActive(false);
         }
-
         private IEnumerator ShowTooltipsCoroutine()
         {
             int totalTooltipsCount = toolTipData.toolTips.Length;

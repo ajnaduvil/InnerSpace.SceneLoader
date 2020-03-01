@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using System.IO;
+﻿using System.IO;
 using UnityEngine;
 
 namespace Innerspace.TestApp.ToolTip
@@ -12,14 +10,13 @@ namespace Innerspace.TestApp.ToolTip
     public class ToolTipDataContainer : ScriptableObject
     {
         public ToolTipData[] toolTips;
-  
+
         private static string ReadConfigFile(string fileNamePath)
         {
             var sr = File.OpenText(fileNamePath);
             var data = sr.ReadToEnd();
             return data;
         }
-
         public void LoadOrCreateConfig(string path)
         {
             var fileName = Path.Combine(Application.dataPath, "ToolTipConfig.json");
@@ -36,7 +33,6 @@ namespace Innerspace.TestApp.ToolTip
                 Debug.Log("Config File Created :" + path);
             }
         }
-
         private void CreateConfig(string fileNameFullPath)
         {
             var jsonConfigData = JsonUtility.ToJson(this);
@@ -46,9 +42,7 @@ namespace Innerspace.TestApp.ToolTip
             streamWriter.Write(jsonConfigData);
             streamWriter.Close();
         }
-
     }
-
 
     /// <summary>
     /// Tooltip data class
@@ -59,6 +53,4 @@ namespace Innerspace.TestApp.ToolTip
         public string header;
         public string info;
     }
-
-
 }
