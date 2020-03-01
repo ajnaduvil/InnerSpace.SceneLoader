@@ -68,8 +68,8 @@ Here is a video of the project in action.
 
 ### References
 
-**Executable Build** :
-[https://github.com/ajnaduvil/InnerSpace.SceneLoader/releases/tag/v1.0.0](https://github.com/ajnaduvil/InnerSpace.SceneLoader/releases/tag/v1.0.0)
+**[Executable Build]** :
+(https://github.com/ajnaduvil/InnerSpace.SceneLoader/releases/tag/v1.0.0)
 The build `Scene.Loader.v1.0.0.zip` file contains the following files
 
 1. Executable Build : The folder `Scene Loader v1.0.0` contains the executable file. Double click `Innerspace Scene Loader.exe` to run the application
