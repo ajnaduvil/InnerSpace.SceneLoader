@@ -1,2 +1,49 @@
-# InnerSpace.SceneLoader
-Test project for Innespace
+# Innerspace Scene Loader
+
+### Objective 
+To implement the scene-loader for the VR-Trainings.
+### User Stories Covered
+-   As a user, I want to see a loading screen, while the main-scene loads, so that I get an indicator that the program is not stuck.
+-   As a user, I want to get one randomized hint/tip/quote about VR-Trainings in general (effectivity, etc.), while the main-scene loads so that I can learn something, while waiting. (be creative, with finding useful quotes)
+-   As a user, I want to see some kind of progress while waiting, so that I can guess approximately how long it could take, until I can start the training.
+-   As a user, I want to have a smooth transition between loading screen and the scene itself. (be creative, with the transition… but keep in mind you build it for VR-Users)
+-   As a product owner, I want to change the hints/tips/quotes outside of unity, so that I don’t need to have coding-skills.
+BONUS:
+-   As a VR-User, I want to have a loading-screen, which follows the movement of the headset with a slight delay, as static HUDs are not very comfortable. Robo-Recall does this very good in this sample at minute 7:00 [https://youtu.be/Tjzcuz7PN5k?t=420](https://youtu.be/Tjzcuz7PN5k?t=420)
+
+### Video
+
+Here is a video of the project in action.
+[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/FGkpgwpMenE/0.jpg)](https://www.youtube.com/watch?v=FGkpgwpMenE)
+
+### Technologies Used
+
+-   [VRTK](https://assetstore.unity.com/packages/tools/integration/vrtk-virtual-reality-toolkit-vr-toolkit-64131) : Used for setting up VR in the applicaiton. Made use of vrtk's features like UI interaction, teleport ..etc
+-   [Oculus Integration](https://assetstore.unity.com/packages/tools/integration/oculus-integration-82022) : Used go integrated oculus sdk with VRTK
+-   [Oculus AvtarSDK v1.26](https://developer.oculus.com/downloads/package/oculus-avatar-sdk/1.26.0/) : Used for VR body awareness. Virtual hands in the application is from Avtar SDK.
+-   [AVR Utils](AVR%20Utils) : This is a public repository I have created which contains some re-usable components for Unity development.
+-   [C#](https://docs.microsoft.com/en-us/dotnet/csharp/) :  Used as the scripting language
+-   [Unity3D](http://Unity3D) : Used for application development. 
+-   [Finished Cabin](https://assetstore.unity.com/packages/3d/environments/urban/furnished-cabin-71426) Unity Asset : Used as the main scene
+
+
+### Known Issues
+-  App needs an oculus device to be connected. Fail scenarios related to device availability are not handled.
+-   In tooltip config file, the character limit validation and format validation is not implemented
+
+### Implementation Details
+>For further details about the technical implementation of the project see [Implementaion Details](https://assetstore.unity.com/packages/3d/environments/urban/furnished-cabin-71426) page.
+
+### References
+
+**Executable Build** :
+[https://github.com/ajnaduvil/InnerSpace.SceneLoader/releases/tag/v1.0.0](https://github.com/ajnaduvil/InnerSpace.SceneLoader/releases/tag/v1.0.0)
+The build `Scene.Loader.v1.0.0.zip` file contains the following files
+
+1. Executable Build : The folder `Scene Loader v1.0.0` contains the executable file. Double click `Innerspace Scene Loader.exe` to run the application
+2. Sample `ToolTipConfig.json` file : This file can be used to replace the default tooltip data by adding it in `Scene Loader v1.0.0\Innerspace Scene Loader_Data` folder
+ 3.  A preview video of the application in action
+
+
+
+
