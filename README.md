@@ -17,6 +17,36 @@ Here is a video of the project in action.
 
 [![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/FGkpgwpMenE/0.jpg)](https://www.youtube.com/watch?v=FGkpgwpMenE)
 
+### Application User Experience
+
+-   Connect the oculus rift to the laptop/PC
+-   Launch the Scene Loader application by double clicking "Innerspace.SceneLoader.exe"
+-   In the entry screen a welcome UI with a "Load" button appears
+-   Click "Load" button using the trigger on the oculus controller
+-   The scene fades to black and loading screen with random tool tip and progress bar and a loading icon appears
+-   Once the scene loading finishes the cabin Interior appears.
+-   Click thumb stick button to teleport around the interior
+
+**Changing the tool tip configuration**
+
+-   A `ToolTipConfig.json` with the default configuration data will be created at `Scene Loader v1.0.0\Innerspace Scene Loader_Data` after running the application for the first time.
+-   You can edit the `ToolTipConfig.json` data or replace with new file
+-   A sample tooltip configuration is provided with the build to demonstrate changing the tool tip data dynamaically
+** Tool Configuration file format **
+```json
+{
+"toolTips":[
+{
+"header":"Did you know?",  
+"info":"The use of VR in education will dramatically increase over the next few years. While it is unlikely to replace traditional face-to-face teaching methods anytime soon."  
+},  
+{
+"header":"Did you know?",  
+"info":"The University of Barcelona uses VR as a tool in psychology and neuroscience. UCLA is training neurosurgeons using their “Surgical Theatre”"  
+}]
+}
+```
+
 ### Technologies Used
 
 -   [VRTK](https://assetstore.unity.com/packages/tools/integration/vrtk-virtual-reality-toolkit-vr-toolkit-64131) : Used for setting up VR in the applicaiton. Made use of vrtk's features like UI interaction, teleport ..etc
@@ -33,7 +63,7 @@ Here is a video of the project in action.
 -   In tooltip config file, the character limit validation and format validation is not implemented
 
 ### Implementation Details
->For further details about the technical implementation of the project see [Implementaion Details](https://assetstore.unity.com/packages/3d/environments/urban/furnished-cabin-71426) page.
+>For further details about the technical implementation of the project see [Implementation Details]("") page.
 
 ### References
 
@@ -43,7 +73,7 @@ The build `Scene.Loader.v1.0.0.zip` file contains the following files
 
 1. Executable Build : The folder `Scene Loader v1.0.0` contains the executable file. Double click `Innerspace Scene Loader.exe` to run the application
 2. Sample `ToolTipConfig.json` file : This file can be used to replace the default tooltip data by adding it in `Scene Loader v1.0.0\Innerspace Scene Loader_Data` folder
- 3.  A preview video of the application in action
+3.  A preview video of the application in action
 
 
 
