@@ -14,6 +14,7 @@ BONUS:
 ### Video
 
 Here is a video of the project in action.
+
 [![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/FGkpgwpMenE/0.jpg)](https://www.youtube.com/watch?v=FGkpgwpMenE)
 
 ### Technologies Used
