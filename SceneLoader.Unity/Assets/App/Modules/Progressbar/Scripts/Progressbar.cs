@@ -1,9 +1,9 @@
 ﻿using System;
-using System.Collections;
-using System.Collections.Generic;
+using System.Runtime.CompilerServices;
 using UnityEngine;
-using UnityEngine.UI;
 
+// To make the internal methods available to test assembly
+[assembly: InternalsVisibleTo("ProgressbarEditorTests")]
 namespace Innerspace.TestApp.UI
 {
     /// <summary>
@@ -36,7 +36,7 @@ namespace Innerspace.TestApp.UI
                 progressChanged?.Invoke(progress);
             }
         }
-        private void OnValidate()
+        internal void OnValidate()
         {
             progressChanged?.Invoke(progress);
         }

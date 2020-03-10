@@ -1,6 +1,8 @@
-﻿using UnityEngine;
+﻿using System.Runtime.CompilerServices;
+using UnityEngine;
 using UnityEngine.UI;
 
+[assembly: InternalsVisibleTo("ProgressbarEditorTests")]
 namespace Innerspace.TestApp.UI
 {
     [RequireComponent(typeof(Progressbar))]
@@ -20,7 +22,7 @@ namespace Innerspace.TestApp.UI
 
         private Progressbar progressbar;
 
-        private void OnValidate()
+        internal void OnValidate()
         {
             if (fillImage)
             {
@@ -39,20 +41,20 @@ namespace Innerspace.TestApp.UI
         }
 
         #region Monobehaviour Methods
-        void Awake()
+        internal void Awake()
         {
             progressbar = GetComponent<Progressbar>();
         }
 
-        private void OnEnable()
+        internal void OnEnable()
         {
             progressbar.progressChanged += UpdateProgress;
             UpdateProgress(progressbar.Progress);
         }
 
-        private void OnDisable()
+        internal void OnDisable()
         {
-            progressbar.progressChanged += UpdateProgress;
+            progressbar.progressChanged -= UpdateProgress;
         }
         #endregion
     }
