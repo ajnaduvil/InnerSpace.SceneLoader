@@ -1,9 +1,11 @@
-﻿using TMPro;
+﻿using System.Runtime.CompilerServices;
+using TMPro;
 using UnityEngine;
 
+// To make the internal methods available to test assembly
+[assembly: InternalsVisibleTo("LoadingHUDEditorTests")]
 namespace Innerspace.TestApp.UI
 {
-
     /// <summary>
     /// Class for customizing the loading cursor HUD
     /// </summary>
@@ -26,7 +28,7 @@ namespace Innerspace.TestApp.UI
         public string loadingText = "Loading..";
 
         //Makes sure in-Editor changes are applied
-        private void OnValidate()
+        internal void OnValidate()
         {
             Init();
         }
@@ -50,7 +52,7 @@ namespace Innerspace.TestApp.UI
 
         }
         // Start is called before the first frame update
-        void Start()
+        internal void Start()
         {
             Init();
         }
