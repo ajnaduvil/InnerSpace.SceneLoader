@@ -15,13 +15,11 @@ namespace Innerspace.TestApp.UI
         {
             progressbar.gameObject.SetActive(false);
             loadingCursor.gameObject.SetActive(false);
-            tooltipDisplay.DisableDisplay();
         }
         internal void EnableHUD()
         {
             progressbar.gameObject.SetActive(true);
             loadingCursor.gameObject.SetActive(true);
-            tooltipDisplay.EnableDisplay();
         }
     }
 }
