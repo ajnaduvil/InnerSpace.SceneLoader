@@ -1,0 +1,22 @@
+{
+    "name": "Innerspace.TestApp",
+    "references": [
+        "GUID:55c123d82b4a20346ab565067317de54",
+        "GUID:56be5224f12ddcd4b87d0b5d6666658f",
+        "GUID:b30f404925b0a9240a18c86d5557a609",
+        "GUID:bbf0cc73a311a864e9a41e213e7f8503",
+        "GUID:6055be8ebefd69e48b49212b09b47b2f",
+        "GUID:39645913f352a85409338f646e1cfd21",
+        "GUID:f367e18c59d6b7e4fb4a4bbdb1ca29da",
+        "GUID:de7143ca31a0abe4591704aa74afbb65",
+        "GUID:4fe587e0567911941b7ed0c9a24dd52d"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": []
+}
