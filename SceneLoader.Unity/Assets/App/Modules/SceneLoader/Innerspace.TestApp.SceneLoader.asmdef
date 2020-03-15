@@ -1,0 +1,16 @@
+{
+    "name": "Innerspace.TestApp.SceneLoader",
+    "references": [
+        "GUID:f367e18c59d6b7e4fb4a4bbdb1ca29da",
+        "GUID:1319ac4d81b0704448c3a5cbf196e285",
+        "GUID:4fe587e0567911941b7ed0c9a24dd52d"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": []
+}

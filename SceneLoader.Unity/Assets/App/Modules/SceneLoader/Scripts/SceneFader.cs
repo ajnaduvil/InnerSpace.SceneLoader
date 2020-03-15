@@ -1,9 +1,13 @@
 ﻿using AVR.Utils;
 using System;
 using System.Collections;
+using System.Runtime.CompilerServices;
 using UnityEngine;
 using UnityEngine.Assertions;
+using Innerspace.TestApp;
+using Innerspace.TestApp.Utils;
 
+[assembly: InternalsVisibleTo("SceneLoaderEditorTests")]
 namespace Innerspace.TestApp.SceneLoader
 {
     /// <summary>
@@ -19,6 +23,7 @@ namespace Innerspace.TestApp.SceneLoader
         [Header("References")]       
         public Animator faderAC;
         public Renderer faderRenderer;
+        [HideInInspector]
         public Camera targetCamera;
         #endregion
 
@@ -30,8 +35,10 @@ namespace Innerspace.TestApp.SceneLoader
         /// </summary>
         public void Setup()
         {
+            targetCamera = CameraCache.Main;
             Assert.IsNotNull(targetCamera);
             Assert.IsNotNull(faderAC);
+
             //Reset the render plane position to zero
             faderRenderer.transform.localPosition = Vector3.zero;
             //Make sure the position of the fader is closest to the target camera's near clipping plane
@@ -84,7 +91,7 @@ namespace Innerspace.TestApp.SceneLoader
         #endregion
 
         #region Monobehaviour Methods
-        private void Start()
+        internal void Start()
         {
             Setup();
         }
