@@ -1,6 +1,6 @@
 ﻿using System.Collections;
 using UnityEngine;
-
+using Innerspace.TestApp.Utils;
 namespace Innerspace.TestApp
 {
     /// <summary>
@@ -8,7 +8,6 @@ namespace Innerspace.TestApp
     /// </summary>
     public class HUDCamera : MonoBehaviour
     {
-
         IEnumerator Start()
         {
             yield return SetupHUDCamera();
@@ -16,9 +15,8 @@ namespace Innerspace.TestApp
 
         IEnumerator SetupHUDCamera()
         {
-            yield return new WaitUntil(() => CameraCache.Instance.Main != null);
-            transform.parent = CameraCache.Instance.Main.transform.parent;
-           // transform.localPosition = Vector3.zero;
+            yield return new WaitUntil(() => CameraCache.Main != null);
+            transform.parent = CameraCache.Main.transform.parent;
         }
     }
 }
