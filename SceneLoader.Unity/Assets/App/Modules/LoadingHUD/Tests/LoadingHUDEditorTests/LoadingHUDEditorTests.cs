@@ -11,8 +11,8 @@ namespace LoadingHUDEditorTests
 {
     public class LoadingHUDEditorTests
     {
-        // A Test behaves as an ordinary method
         [Test]
+        [Description("To verify if the LoadingCursorHUD prefab can be successfully instantiated")]
         public void LoadingCursorPrefab_InstantiationTest()
         {
             // Arrange
@@ -30,6 +30,7 @@ namespace LoadingHUDEditorTests
         }
 
         [Test]
+        [Description("Loading text value change should update the display text")]
         public void LoadingCursorInstance_LoadingTextChangeTest()
         {
             // Arrange
@@ -53,6 +54,7 @@ namespace LoadingHUDEditorTests
         }
 
         [Test]
+        [Description("Background color change should update background mesh's material")]
         public void LoadingCursorInstance_LoadingBackgroundColorChangeTest()
         {
             // Arrange
@@ -78,6 +80,7 @@ namespace LoadingHUDEditorTests
         }
 
         [Test]
+        [Description("Foreground color change should update foreground mesh's material")]
         public void LoadingCursorInstance_LoadingForeGroundColorChangeTest()
         {
             // Arrange
