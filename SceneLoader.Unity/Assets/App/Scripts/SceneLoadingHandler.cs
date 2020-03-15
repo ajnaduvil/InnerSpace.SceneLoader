@@ -3,6 +3,7 @@ using Innerspace.TestApp.SceneLoader;
 using Innerspace.TestApp.States;
 using Innerspace.TestApp.ToolTip;
 using Innerspace.TestApp.UI;
+using Innerspace.TestApp.Utils;
 using System.Collections;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -34,7 +35,7 @@ namespace Innerspace.TestApp
         public IEnumerator StartLoadingScene()
         {           
             Debug.Log("Starting to load scene at index " + sceneIndex);
-            yield return new WaitUntil(() => CameraCache.Instance.Main != null);
+            yield return new WaitUntil(() => CameraCache.Main != null);
             SceneFader.Instance.FadeIn();
             var sceneLoadingOperation = SceneManager.LoadSceneAsync(sceneIndex, LoadSceneMode.Additive);
             sceneLoadingOperation.allowSceneActivation = false;
