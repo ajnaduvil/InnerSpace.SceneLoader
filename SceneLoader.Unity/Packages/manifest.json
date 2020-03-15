@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "com.avr.testutils": "https://github.com/ajnaduvil/AVR.TestUtils.git",
     "com.avr.utils": "https://github.com/ajnaduvil/AVR.Utils.git",
     "com.unity.collab-proxy": "1.2.16",
     "com.unity.ext.nunit": "1.0.0",
@@ -46,6 +47,10 @@
   "lock": {
     "com.avr.utils": {
       "hash": "d7b9285d149e8176f1973814cc4165d0c628faba",
+      "revision": "HEAD"
+    },
+    "com.avr.testutils": {
+      "hash": "8797804198fe1b72afeeda274ec7dc19214187ba",
       "revision": "HEAD"
     }
   }
