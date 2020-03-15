@@ -1,0 +1,17 @@
+{
+    "name": "Oculus.Avatar",
+    "references": [
+        "GUID:f64c9ebcd7899c3448a08dc9f9ddbe30",
+        "GUID:1c174e805e306914c90765c05c3f5edf"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": true,
+    "precompiledReferences": [
+        "nunit.framework.dll"
+    ],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": []
+}
