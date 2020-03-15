@@ -1,6 +1,9 @@
-﻿using UnityEngine;
+﻿using Innerspace.TestApp.Utils;
+using System.Runtime.CompilerServices;
+using UnityEngine;
 
-namespace Innerspace.TestApp
+[assembly: InternalsVisibleTo("SmoothFollowEditorTests")]
+namespace Innerspace.TestApp.SmoothFollow
 {
     /// <summary>
     /// Smoothly follow the target object always maintaining a <see cref="distance"/>
@@ -30,19 +33,23 @@ namespace Innerspace.TestApp
 
         private bool isSetup = false;
         // Start is called before the first frame update
-        void Start()
+        internal void Start()
         {
             Setup();
         }
 
         public void Setup()
         {
+            if (targetToFollow == null)
+            {
+                targetToFollow = CameraCache.Main.transform;
+            }
             transform.position = targetToFollow.transform.position + targetToFollow.transform.forward * distance;
             isSetup = true;
         }
 
         // Update is called once per frame
-        void LateUpdate()
+        internal void LateUpdate()
         {
             //if (!isSetup) return;
             var targetPosition = targetToFollow.position + targetToFollow.forward * distance;

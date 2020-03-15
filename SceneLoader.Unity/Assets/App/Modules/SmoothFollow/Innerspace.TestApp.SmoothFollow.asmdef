@@ -1,0 +1,14 @@
+{
+    "name": "Innerspace.TestApp.SmoothFollow",
+    "references": [
+        "GUID:4fe587e0567911941b7ed0c9a24dd52d"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": []
+}
