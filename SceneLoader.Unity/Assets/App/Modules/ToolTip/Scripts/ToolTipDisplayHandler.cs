@@ -64,8 +64,8 @@ namespace Innerspace.TestApp.ToolTip
                 toolTipDisplay.UpdateDisplay(toolTipData.toolTips[randomIndex]);
                 yield return new WaitForSeconds(randomTooltipDelay);
             }
-
             Debug.Log("Could not find any tooltips");
         }
     }
 }
+    

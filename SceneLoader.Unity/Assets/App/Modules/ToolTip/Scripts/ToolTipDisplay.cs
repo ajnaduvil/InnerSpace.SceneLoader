@@ -11,14 +11,6 @@ namespace Innerspace.TestApp.ToolTip
         public TextMeshProUGUI headerText;
         public TextMeshProUGUI infoText;
 
-        public void EnableDisplay()
-        {
-            ///TODO: Method to be removed
-        }
-        public void DisableDisplay()
-        {
-            ///TODO: Method to be removed
-        }
         /// <summary>
         /// Updates the tooltip diplay
         /// </summary>
@@ -27,6 +19,15 @@ namespace Innerspace.TestApp.ToolTip
         {
             headerText.text = data.header;
             infoText.text = data.info;
+        }
+
+        /// <summary>
+        /// Resets the display text
+        /// </summary>
+        public void ResetDisplay()
+        {
+            headerText.text = "";
+            infoText.text = "";
         }
     }
 }
