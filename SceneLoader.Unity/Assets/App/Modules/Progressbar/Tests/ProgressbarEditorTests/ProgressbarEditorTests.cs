@@ -25,11 +25,9 @@ namespace ProgressbarEditorTests
             GameObject.DestroyImmediate(progressBarInstance);
         }
 
-
         [Test]
         [Sequential]
         [Description("To validate progresschange callback receives the changes in progress value")]
-
         public void ProgressbarInstance_ProgressChangeCallbackTest([Values(0f, 0.5f, 1f)] float expectedValue, [Values(0f, 0.5f, 1f)] float valueToTest)
         {
             // Arrange
@@ -54,7 +52,6 @@ namespace ProgressbarEditorTests
             // Clean Up
             GameObject.DestroyImmediate(progresbarInstance);
         }
-
 
         [Test]
         [Sequential]
