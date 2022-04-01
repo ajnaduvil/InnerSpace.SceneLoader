@@ -60,7 +60,7 @@ Here is a video of the project in action.
 
 
 ### Known Issues
--  App needs an oculus device to be connected. Fail scenarios related to device availability are not handled.
+-  App needs an oculus device to be connected. Failure scenarios related to device availability are not handled.
 -   In tooltip config file, the character limit validation and format validation is not implemented
 
 ### Implementation Details
