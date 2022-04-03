@@ -48,12 +48,12 @@ Here is a video of the project in action.
 }
 ```
 
-### Technologies Used
+### Dependencies
 
 -   [VRTK](https://assetstore.unity.com/packages/tools/integration/vrtk-virtual-reality-toolkit-vr-toolkit-64131) : Used for setting up VR in the applicaiton. Made use of vrtk's features like UI interaction, teleport ..etc
 -   [Oculus Integration](https://assetstore.unity.com/packages/tools/integration/oculus-integration-82022) : Used go integrated oculus sdk with VRTK
 -   [Oculus AvtarSDK v1.26](https://developer.oculus.com/downloads/package/oculus-avatar-sdk/1.26.0/) : Used for VR body awareness. Virtual hands in the application is from Avtar SDK.
--   [AVR Utils](AVR%20Utils) : This is a public repository I have created which contains some re-usable components for Unity development.
+-   [AVR Utils](https://github.com/ajnaduvil/AVR.Utils) : This is a public repository I have created which contains some re-usable components for Unity development.
 -   [C#](https://docs.microsoft.com/en-us/dotnet/csharp/) :  Used as the scripting language
 -   [Unity3D](http://Unity3D) : Used for application development. 
 -   [Finished Cabin](https://assetstore.unity.com/packages/3d/environments/urban/furnished-cabin-71426) Unity Asset : Used as the main scene
