@@ -16,7 +16,8 @@
 
 ###  Modules
 These are modules in the project which is developed in  a re-usable way. Test scenes for each modules are also included in their respective folders.
-> Unit tests for each modules can be found under `Tests` folder in their respective folders
+> Unit tests for each modules as editor mode tests can be found under `Tests` folder in their respective folders
+> Integration Tests as playmode tests can be found under the folder [`Assets\Tests`](https://github.com/ajnaduvil/InnerSpace.SceneLoader/tree/master/SceneLoader.Unity/Assets/App/Tests)
 #### Tooltip
 Takes care of displaying tool tip , creating and loading the tool tip info from the config file
 -  Use [TooltipDisplay.prefab](https://github.com/ajnaduvil/InnerSpace.SceneLoader/blob/master/SceneLoader.Unity/Assets/App/Modules/ToolTip/Prefabs/TooltipDisplay.prefab "TooltipDisplay.prefab")  to display tool tip
