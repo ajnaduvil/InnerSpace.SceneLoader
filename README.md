@@ -55,7 +55,7 @@ Here is a video of the project in action.
 -   [Oculus AvtarSDK v1.26](https://developer.oculus.com/downloads/package/oculus-avatar-sdk/1.26.0/) : Used for VR body awareness. Virtual hands in the application is from Avtar SDK.
 -   [AVR Utils](https://github.com/ajnaduvil/AVR.Utils) : This is a public repository I have created which contains some re-usable components for Unity development.
 -   [C#](https://docs.microsoft.com/en-us/dotnet/csharp/) :  Used as the scripting language
--   [Unity3D](http://Unity3D) : Used for application development. 
+-   [Unity3D](http://unity.com) : Used for application development. 
 -   [Finished Cabin](https://assetstore.unity.com/packages/3d/environments/urban/furnished-cabin-71426) Unity Asset : Used as the main scene
 
 
