@@ -64,7 +64,7 @@ Here is a video of the project in action.
 -   In tooltip config file, the character limit validation and format validation is not implemented
 
 ### Implementation Details
->For further details about the technical implementation of the project see [Implementation Details](https://github.com/user/repo/blob/branch/other_file.md) page.
+>For further details about the technical implementation of the project see [Implementation Details](https://github.com/ajnaduvil/InnerSpace.SceneLoader/blob/master/Implementation%20Details.md) page.
 
 ### References
 
