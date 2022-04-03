@@ -48,7 +48,7 @@ Here is a video of the project in action.
 }
 ```
 
-### Technologies Used
+### Dependencies
 
 -   [VRTK](https://assetstore.unity.com/packages/tools/integration/vrtk-virtual-reality-toolkit-vr-toolkit-64131) : Used for setting up VR in the applicaiton. Made use of vrtk's features like UI interaction, teleport ..etc
 -   [Oculus Integration](https://assetstore.unity.com/packages/tools/integration/oculus-integration-82022) : Used go integrated oculus sdk with VRTK
