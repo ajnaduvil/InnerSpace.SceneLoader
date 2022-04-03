@@ -2,10 +2,10 @@
 # Implementaiton Details
 
 ### Scene Hierarchy
-![alt text](https://github.com/ajnaduvil/InnerSpace.SceneLoader/blob/master/Documentation/Implementation%20Details/project%20hierarchy.PNG?raw=true)
+![alt text](https://github.com/ajnaduvil/InnerSpace.SceneLoader/blob/misc/quick_refactoring/Documentation/Implementation%20Details/project%20hierarchy.PNG?raw=true)
 
 ### Project file structure
-![alt text](https://github.com/ajnaduvil/InnerSpace.SceneLoader/blob/master/Documentation/Implementation%20Details/project%20file%20structure.PNG?raw=true)
+![alt text](https://github.com/ajnaduvil/InnerSpace.SceneLoader/blob/misc/quick_refactoring/Documentation/Implementation%20Details/project%20file%20structure.PNG?raw=true)
 ### Project Flow
  1.  Application enters `AppLoadedState` when the application is launched.
  2.  The [SceneLoadingHandler.cs](https://github.com/ajnaduvil/InnerSpace.SceneLoader/blob/master/SceneLoader.Unity/Assets/App/Scripts/SceneLoadingHandler.cs) is responsible for handling the  "Init" to "MainScene" transition logic
@@ -16,8 +16,7 @@
 
 ###  Modules
 These are modules in the project which is developed in  a re-usable way. Test scenes for each modules are also included in their respective folders.
-> Unit tests for each modules as editor mode tests can be found under `Tests` folder in their respective folders
-> Integration Tests as playmode tests can be found under the folder [`Assets\Tests`](https://github.com/ajnaduvil/InnerSpace.SceneLoader/tree/master/SceneLoader.Unity/Assets/App/Tests)
+(https://github.com/ajnaduvil/InnerSpace.SceneLoader/tree/master/SceneLoader.Unity/Assets/App/Tests)
 #### Tooltip
 Takes care of displaying tool tip , creating and loading the tool tip info from the config file
 -  Use [TooltipDisplay.prefab](https://github.com/ajnaduvil/InnerSpace.SceneLoader/blob/master/SceneLoader.Unity/Assets/App/Modules/ToolTip/Prefabs/TooltipDisplay.prefab "TooltipDisplay.prefab")  to display tool tip
@@ -39,3 +38,10 @@ Contains a circular curosor with a spinning animation.
 
 #### SmoothFollow
 The [`SmoothFollow.cs`](https://github.com/ajnaduvil/InnerSpace.SceneLoader/blob/master/SceneLoader.Unity/Assets/App/Modules/SmoothFollow/SmoothFollow.cs "SmoothFollow.cs")is used to follow an object smoothly maintaining a minimum distance.
+### Tests
+> Unit tests for each modules as editor mode tests can be found under `Tests` folder in their respective folders
+> Integration Tests as playmode tests can be found under the folder [`Assets\Tests`]
+
+Editor Mode Tests           |  Playmode Tests (Integration testing)
+:-------------------------:|:-------------------------:
+![](https://github.com/ajnaduvil/InnerSpace.SceneLoader/blob/misc/quick_refactoring/Documentation/Implementation%20Details/editor%20tests.png?raw=true)  |  ![](https://github.com/ajnaduvil/InnerSpace.SceneLoader/blob/misc/quick_refactoring/Documentation/Implementation%20Details/playmode%20tests.png?raw=true)
