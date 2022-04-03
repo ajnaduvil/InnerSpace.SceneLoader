@@ -8,7 +8,7 @@ To implement the scene-loader for the VR-Trainings.
 -   As a user, I want to see some kind of progress while waiting, so that I can guess approximately how long it could take, until I can start the training.
 -   As a user, I want to have a smooth transition between loading screen and the scene itself. (be creative, with the transition… but keep in mind you build it for VR-Users)
 -   As a product owner, I want to change the hints/tips/quotes outside of unity, so that I don’t need to have coding-skills.
-BONUS:
+#### BONUS:
 -   As a VR-User, I want to have a loading-screen, which follows the movement of the headset with a slight delay, as static HUDs are not very comfortable. Robo-Recall does this very good in this sample at minute 7:00 [https://youtu.be/Tjzcuz7PN5k?t=420](https://youtu.be/Tjzcuz7PN5k?t=420)
 
 ### Video
