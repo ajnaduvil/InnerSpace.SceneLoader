@@ -40,7 +40,7 @@ Contains a circular curosor with a spinning animation.
 The [`SmoothFollow.cs`](https://github.com/ajnaduvil/InnerSpace.SceneLoader/blob/master/SceneLoader.Unity/Assets/App/Modules/SmoothFollow/SmoothFollow.cs "SmoothFollow.cs")is used to follow an object smoothly maintaining a minimum distance.
 ### Tests
 > Unit tests for each modules as editor mode tests can be found under `Tests` folder in their respective folders
-> Integration Tests as playmode tests can be found under the folder [`Assets\Tests`]
+> Integration Tests as playmode tests can be found under the folder [`[Assets\App\Tests](https://github.com/ajnaduvil/InnerSpace.SceneLoader/tree/misc/quick_refactoring/SceneLoader.Unity/Assets/App/Tests)`]
 
 Editor Mode Tests           |  Playmode Tests (Integration testing)
 :-------------------------:|:-------------------------:
